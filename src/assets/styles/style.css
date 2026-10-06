@@ -2,10 +2,81 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.test {
-    color: red !important;
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.title-main {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.title-page {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-section {
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-sub {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 10px 15px; 
+    width: 100%;
+}
+
+.btn-submit {
+    background: linear-gradient(90deg,#2170e7,#bf47e4);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.contact-form {
+    background-image: url('/image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.breadcrumbs li:before {
+    content: "/ ";
+    color: #666;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #1F3F68;
 }

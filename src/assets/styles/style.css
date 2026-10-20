@@ -106,3 +106,37 @@ body {
     box-shadow: 3px 0 5px rgba(0, 0, 0, 0.45);
     z-index: 3;
 }
+
+.intro-section,
+.about-section,
+.services-section,
+.contact-intro-section,
+.contact-details,
+.contact-message-section,
+footer > section {
+    margin: 18px 0;
+    padding: 16px 20px;
+    border: 1px solid #e3eaf2;
+    border-radius: 10px;
+}
+
+main > hr,
+footer > hr,
+.contact-details > hr {
+    border: 0;
+    border-top: 1px solid #e5eaf0;
+    margin: 16px 0;
+}
+
+.contact-details > section {
+    padding: 4px 0;
+}
+
+.contact-intro-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer > section {
+    padding: 10px 16px;
+}

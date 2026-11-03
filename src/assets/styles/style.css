@@ -1,109 +1,235 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@font-face {
+    font-family: Inter;
+    src: url("assets/inter.woff2");
+    font-weight: 400 700;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-width: 1280px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #101828;
+    font: 15px/1.4 Inter, Arial, sans-serif;
 }
 
-.paragraph {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
+h1, h2, h3, p {
+    margin: 0;
 }
 
-.title-main {
-    font-size: 64px;
-    color: #1F3F68;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.title-page {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
+address {
+    font-style: normal;
 }
 
-.title-section {
-    font-size: 36px;
-    text-align: center;
+.container {
+    width: 1224px;
+    margin: 0 auto;
 }
 
-.title-sub {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 24px;
+    background: #f2f4f7;
 }
 
-.form-input {
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-    padding: 10px 15px; 
-    width: 100%;
-}
-
-.btn-submit {
-    background: linear-gradient(90deg,#2170e7,#bf47e4);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    border: none;
-    padding: 15px 30px;
-    cursor: pointer;
-}
-
-.contact-form {
-    background-image: url('/image.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    border-radius: 15px;
-}
-
-.breadcrumbs {
-    display: inline-flex;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    background: linear-gradient(180deg, #d3e5e6 0%, #3e8188 60%, #316d73 100%);
-    border-radius: 4px;
-    height: 42px;
+.header-row {
+    width: 1124px;
+    height: 56px;
+    padding: 0 24px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #0002;
 }
 
-.breadcrumbs li {
+.logo {
+    color: #2d66ee;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-row nav, .header-row address {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.header-row address {
+    color: #2d66ee;
+}
+
+.hero {
+    min-height: 820px;
+    padding: 80px 0;
+    overflow: hidden;
+    background: #f2f4f7;
+}
+
+.hero .container {
     position: relative;
 }
 
-.breadcrumbs a,
-.breadcrumbs span {
-    display: flex;
-    align-items: center;
-    height: 42px;
-    padding: 0 28px 0 22px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 15px;
-    font-family: 'Times New Roman', serif; 
-    z-index: 2;
-}
-
-.breadcrumbs li::after {
-    content: '';
+.hero-picture {
     position: absolute;
-    right: -12px;
-    top: 0;
-    width: 24px;
-    height: 42px;
-    background: linear-gradient(180deg, #d3e5e6 0%, #3e8188 60%, #316d73 100%);
-    border-top-right-radius: 21px;
-    border-bottom-right-radius: 21px;
-    border-right: 1px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.45);
-    z-index: 3;
+    top: -160px;
+    right: -350px;
+    width: 712px;
 }
 
+.hero-text {
+    position: relative;
+    width: 676px;
+}
+
+h1, .services h2, .site-footer h2 {
+    font-size: 36px;
+    line-height: 1.44;
+}
+
+h1, .hero-text > p {
+    width: 600px;
+}
+
+h1 span, .services li span {
+    color: #2d66ee;
+}
+
+.hero-text > p {
+    margin-top: 24px;
+}
+
+.consultation {
+    margin-top: 64px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 24px #0002;
+}
+
+.consultation h2 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form-row {
+    margin-top: 32px;
+    display: flex;
+    align-items: end;
+    gap: 24px;
+}
+
+.form-row label {
+    width: 224px;
+    color: #667085;
+    font-size: 13px;
+}
+
+.form-row input {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 0 0 8px;
+    border: 0;
+    border-bottom: 1px solid #d0d5dd;
+    font: 17px Inter, Arial, sans-serif;
+}
+
+.form-row input::placeholder {
+    color: #101828;
+}
+
+.form-row .phone {
+    padding-left: 24px;
+    background: url("../kazakhstan.webp") left 4px / 16px 12px no-repeat;
+}
+
+.form-row button {
+    width: 132px;
+    padding: 11px 24px;
+    border: 0;
+    border-radius: 8px;
+    background: #2d66ee;
+    color: white;
+    font: 600 14px/18px Inter, Arial, sans-serif;
+    text-align: left;
+    cursor: pointer;
+}
+
+.services {
+    padding: 80px 0;
+    scroll-margin-top: 80px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 496px 1fr;
+    gap: 232px;
+}
+
+.services h2 + p, .services h3 {
+    margin-top: 32px;
+}
+
+.services h3 {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.services h3 + p {
+    font-size: 17px;
+    color: #344054;
+}
+
+.services ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services li {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.services li span {
+    margin-left: 10px;
+}
+
+.site-footer {
+    width: 1224px;
+    margin: auto auto 48px;
+    padding: 16px 24px 24px;
+    background: #101828;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.site-footer address {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 24px 0 32px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.site-footer address p {
+    margin-bottom: 8px;
+    color: #98a2b3;
+    font-size: 14px;
+}

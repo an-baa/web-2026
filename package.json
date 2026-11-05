@@ -1,0 +1,12 @@
+{
+    "name": "it-website-lab",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "sass --no-source-map --style=expanded ./src/styles.scss ./src/styles.css",
+        "watch": "sass --watch --no-source-map --style=expanded styles.scss:styles.css"
+    },
+    "devDependencies": {
+        "sass": "1.107.1"
+    }
+}

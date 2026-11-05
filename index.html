@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>IT Website</title>
-    <link rel="stylesheet" href="src/assets/styles/style.css">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body id="top">
     <header class="site-header">
@@ -26,7 +26,12 @@
     <main>
         <section class="hero">
             <div class="container">
-                <img class="hero-picture" src="src/assets/hero-phones.webp" alt="Mobile app screens">
+                <div class="hero-picture">
+                    <div class="hero-columns">
+                        <div class="hero-column hero-column-left"></div>
+                        <div class="hero-column hero-column-right"></div>
+                    </div>
+                </div>
 
                 <div class="hero-text">
                     <h1>Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
@@ -71,6 +76,72 @@
                 </ul>
             </div>
         </section>
+        <div class="work">
+            <div class="container">
+                <section class="industries">
+                    <h2>Developed more than <span>100</span><br>projects in <span>15</span> industries</h2>
+                    <ul class="industry-list">
+                        <li><img src="./src/assets/img/industry-social.webp" alt="">Social media</li>
+                        <li><img src="./src/assets/img/industry-sport.webp" alt="">Fitness and sport</li>
+                        <li><img src="./src/assets/img/industry-bank.webp" alt="">Bank</li>
+                        <li><img src="./src/assets/img/industry-construction.webp" alt="">Construction</li>
+                        <li><img src="./src/assets/img/industry-games.webp" alt="">Game projects</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-education.webp" alt="">Education</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-transport.webp" alt="">Auto, transport</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-health.webp" alt="">Medicine, health</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-food.webp" alt="">Restaurants, food delivery</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-market.webp" alt="">Marketplaces</li>
+                        <li><img src="./src/assets/img/industry-ar.webp" alt="">AR technology</li>
+                        <li><img src="./src/assets/img/industry-tv.webp" alt="">TV series</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-startup.webp" alt="">Startups</li>
+                        <li class="industry-right"><img src="./src/assets/img/industry-religion.webp" alt="">Religion</li>
+                        <li><img src="./src/assets/img/industry-courses.webp" alt="">Online courses</li>
+                    </ul>
+                </section>
+
+                <section class="projects" id="projects">
+                    <h2>Projects we are proud of</h2>
+                    <p class="projects-intro">Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership.</p>
+
+                    <ul class="project-names">
+                        <li>I-teka</li>
+                        <li>Dauletten</li>
+                        <li>Guru Bosch</li>
+                        <li>Santo</li>
+                        <li>Home Credit Bank</li>
+                        <li>BI Partners</li>
+                        <li>Europharma</li>
+                    </ul>
+                    <button class="projects-button" type="button">View 100 more projects</button>
+
+                    <article class="case-study">
+                        <div class="case-copy">
+                            <h3>I-teka</h3>
+                            <p>The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people, which gives more value.</p>
+                            <p>Business analysis / iOS / Android / QA / UI/UX Design</p>
+                            <p>Kazakhstan · Medicine</p>
+
+                            <dl class="case-stats">
+                                <div>
+                                    <dt>400%</dt>
+                                    <dd>User Growth</dd>
+                                </div>
+                                <div>
+                                    <dt>+ 200 000</dt>
+                                    <dd>Active Users</dd>
+                                </div>
+                            </dl>
+
+                            <div class="store-badges">
+                                <img src="./src/assets/img/app-store.webp" width="148" height="40" alt="App Store">
+                                <img src="./src/assets/img/google-play.webp" width="136" height="40" alt="Google Play">
+                            </div>
+                        </div>
+                        <img class="case-picture" src="./src/assets/img/project-phones.webp" alt="I-teka on two smartphones">
+                    </article>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer class="site-footer" id="contacts">

@@ -550,11 +550,6 @@ h1 span, .services li span, .industries h2 span {
     height: 90px;
     padding: 0 16px;
   }
-  .header-row nav {
-    display: flex;
-    gap: 5px;
-    font-size: 14px;
-  }
   .header-row .logo {
     font-size: 20px;
   }
@@ -591,7 +586,7 @@ h1 span, .services li span, .industries h2 span {
     overflow-y: clip;
   }
   h1, .services h2, .work h2, .case-study h3 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.44;
   }
   .hero-column-left {
@@ -618,7 +613,7 @@ h1 span, .services li span, .industries h2 span {
   }
   .services h3 + p {
     max-width: 280px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
   }
   .services ul {
@@ -640,7 +635,7 @@ h1 span, .services li span, .industries h2 span {
   .industry-list li {
     gap: 12px;
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     overflow-wrap: anywhere;
   }
   .industry-right {

@@ -387,6 +387,12 @@ h1 span, .services li span, .industries h2 span {
     top: -136px;
     width: 60%;
   }
+  .header-row address.tablet-hidden {
+    display: none;
+  }
+  .header-row address {
+    justify-content: flex-end;
+  }
   .form-row {
     flex-wrap: wrap;
     gap: 16px;
@@ -613,14 +619,14 @@ h1 span, .services li span, .industries h2 span {
   }
   .services h3 + p {
     max-width: 280px;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 22px;
   }
   .services ul {
     padding-top: 0;
   }
   .services li {
-    font-size: 20px;
+    font-size: 14px;
   }
   .services li:nth-child(2) {
     font-weight: 600;
@@ -635,7 +641,7 @@ h1 span, .services li span, .industries h2 span {
   .industry-list li {
     gap: 12px;
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     overflow-wrap: anywhere;
   }
   .industry-right {

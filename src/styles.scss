@@ -598,6 +598,9 @@ h1 span, .services li span, .industries h2 span {
 
 
 @media (max-width: 426px) {
+    // body {
+    //     font-size: 20px;
+    // }
     .container {
         width: calc(100% - 32px);
     }
@@ -691,7 +694,7 @@ h1 span, .services li span, .industries h2 span {
         padding: 32px 0 56px;
         h3 + p {
             max-width: 280px;
-            font-size: 14px;
+            font-size: 20px;
             line-height: 22px;
         }
         ul {
@@ -714,7 +717,7 @@ h1 span, .services li span, .industries h2 span {
         li {
             gap: 12px;
             margin: 0;
-            font-size: 14px;
+            font-size: 20px;
             overflow-wrap: anywhere;
         }
     }

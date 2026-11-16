@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @font-face {
   font-family: Inter;
-  src: url("assets/inter.woff2");
+  src: url("assets/img/inter.woff2");
   font-weight: 400 700;
 }
 * {
@@ -104,6 +105,7 @@ address {
 
 .hero-column {
   position: absolute;
+  background-repeat: repeat-y;
   background-size: 100% 50%;
   animation: scroll-column 45s linear infinite;
 }
@@ -126,10 +128,10 @@ address {
 }
 
 @keyframes scroll-column {
-  0% {
+  from {
     transform: translateY(0);
   }
-  100% {
+  to {
     transform: translateY(-50%);
   }
 }
@@ -138,7 +140,7 @@ address {
   width: 676px;
 }
 
-h1, .services h2, .work h2, .case-study h3, .site-footer h2 {
+h1, main h2, .case-study h3, .site-footer h2 {
   font-size: 36px;
   line-height: 1.44;
 }
@@ -193,10 +195,10 @@ h1 span, .services li span, .industries h2 span {
 }
 .form-row .phone {
   padding-left: 24px;
-  background: url("assets/kazakhstan.webp") left 4px/16px 12px no-repeat;
+  background: url("assets/img/kazakhstan.webp") left 4px/16px 12px no-repeat;
 }
 
-.form-row button, .projects-button {
+.form-row button, .projects-button, .contact-button {
   padding: 11px 24px;
   border: 0;
   border-radius: 8px;
@@ -211,7 +213,7 @@ h1 span, .services li span, .industries h2 span {
   text-align: left;
 }
 
-.services, .projects {
+.services, .projects, .faq {
   scroll-margin-top: 80px;
 }
 
@@ -251,7 +253,6 @@ h1 span, .services li span, .industries h2 span {
 }
 
 .work {
-  margin-bottom: 48px;
   padding: 80px 0 64px;
   background: #f2f4f7;
 }
@@ -343,6 +344,215 @@ h1 span, .services li span, .industries h2 span {
   min-width: 0;
 }
 
+.discussion, .stages, .team, .book-section, .faq {
+  padding: 80px 0;
+}
+
+.blue-section {
+  background: #2d66ee url("assets/img/blue-texture.webp") repeat;
+  color: #fff;
+}
+
+.discussion-grid, .team-grid, .book-grid, .faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.discussion-grid {
+  align-items: center;
+}
+.discussion-grid p {
+  max-width: 400px;
+  margin-top: 24px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1333333333);
+}
+.contact-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+.contact-form label {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+.contact-form .email-field {
+  grid-column: 1/-1;
+}
+.contact-form button {
+  justify-self: end;
+}
+
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 392px));
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: stage;
+}
+
+.stage-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 172px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0666666667);
+  counter-increment: stage;
+}
+.stage-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #f2f5fa;
+  font: 700 180px/1 Inter, Arial, sans-serif;
+  content: counter(stage);
+}
+.stage-card h3, .stage-card p {
+  position: relative;
+}
+.stage-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.team {
+  background: #f2f4f7;
+}
+
+.team-grid {
+  grid-template-areas: "intro picture" "info picture";
+  grid-template-rows: auto 1fr;
+  align-items: start;
+}
+
+.team-intro {
+  grid-area: intro;
+}
+.team-intro p {
+  margin-top: 24px;
+}
+
+.team-info {
+  grid-area: info;
+}
+
+.team-picture, .book-picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-picture {
+  grid-area: picture;
+}
+
+.team-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin: 0 0 32px;
+}
+.team-stats dt {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+}
+.team-stats dd {
+  margin: 8px 0 0;
+  color: #667085;
+}
+
+.book-grid {
+  grid-template-areas: "title picture" "form picture";
+  grid-template-rows: auto 1fr;
+  align-items: start;
+}
+.book-grid h2 {
+  grid-area: title;
+}
+
+.book-form {
+  grid-area: form;
+}
+
+.book-picture {
+  grid-area: picture;
+  align-self: center;
+  mask-image: radial-gradient(ellipse, #000 50%, transparent 76%);
+}
+
+.faq {
+  padding-bottom: 48px;
+}
+.faq details {
+  padding: 16px 0;
+  border-bottom: 1px solid #e4e7ec;
+}
+.faq details p {
+  max-width: 520px;
+  margin-top: 16px;
+}
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.faq summary::after {
+  display: grid;
+  flex: 0 0 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0666666667);
+  color: #2d66ee;
+  font-size: 32px;
+  font-weight: 400;
+  content: "+";
+}
+.faq details[open] summary::after {
+  color: #667085;
+  box-shadow: none;
+  content: "×";
+}
+
+.faq-grid {
+  grid-template-areas: "second first";
+  margin-top: 32px;
+  border-top: 1px solid #e4e7ec;
+}
+
+.faq-first {
+  grid-area: first;
+}
+
+.faq-second {
+  grid-area: second;
+}
+
+/* Автоматический верхний отступ прижимает подвал к низу даже без main. */
 .site-footer {
   margin: auto auto 48px;
   padding: 16px 24px 24px;
@@ -365,6 +575,7 @@ h1 span, .services li span, .industries h2 span {
   font-size: 14px;
 }
 
+/* Узкий десктоп и большие планшеты */
 @media (max-width: 1279px) {
   .header-row {
     padding: 0 16px;
@@ -387,12 +598,6 @@ h1 span, .services li span, .industries h2 span {
     top: -136px;
     width: 60%;
   }
-  .header-row address.tablet-hidden {
-    display: none;
-  }
-  .header-row address {
-    justify-content: flex-end;
-  }
   .form-row {
     flex-wrap: wrap;
     gap: 16px;
@@ -405,7 +610,11 @@ h1 span, .services li span, .industries h2 span {
     grid-template-columns: 1fr 1fr;
     gap: 48px;
   }
+  .discussion, .stages, .team, .book-section, .faq {
+    padding: 56px 0;
+  }
 }
+/* Планшет */
 @media (max-width: 769px) {
   .header-row {
     height: 72px;
@@ -463,7 +672,7 @@ h1 span, .services li span, .industries h2 span {
   .hero-text, .consultation {
     width: 55%;
   }
-  h1, .services h2, .work h2, .case-study h3, .site-footer h2 {
+  h1, main h2, .case-study h3, .site-footer h2 {
     font-size: clamp(20px, 3.65vw, 28px);
     line-height: 1.3;
   }
@@ -492,7 +701,7 @@ h1 span, .services li span, .industries h2 span {
   .form-row button {
     width: auto;
   }
-  .services, .projects {
+  .services, .projects, .faq {
     scroll-margin-top: 96px;
   }
   .services {
@@ -512,7 +721,6 @@ h1 span, .services li span, .industries h2 span {
     padding-top: 112px;
   }
   .work {
-    margin-bottom: 32px;
     padding: 40px 0;
   }
   .industry-list {
@@ -533,6 +741,37 @@ h1 span, .services li span, .industries h2 span {
   .case-picture {
     align-self: center;
   }
+  .discussion, .stages, .team, .book-section, .faq {
+    padding: 40px 0;
+  }
+  .discussion-grid, .team-grid, .faq-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .discussion .contact-form {
+    width: 100%;
+    max-width: 600px;
+  }
+  .stages-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    gap: 16px;
+  }
+  .team-grid {
+    grid-template-areas: "intro" "picture" "info";
+    grid-template-rows: auto;
+  }
+  .book-grid {
+    grid-template-areas: "title title" "form picture";
+    grid-template-rows: auto;
+  }
+  .book-form .form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .faq-grid {
+    grid-template-areas: "first" "second";
+    gap: 0;
+  }
   .site-footer {
     margin-bottom: 32px;
   }
@@ -542,6 +781,7 @@ h1 span, .services li span, .industries h2 span {
     font-size: 14px;
   }
 }
+/* Телефон */
 @media (max-width: 426px) {
   .container {
     width: calc(100% - 32px);
@@ -587,11 +827,11 @@ h1 span, .services li span, .industries h2 span {
     top: auto;
     left: auto;
     width: calc(100% + 32px);
-    aspect-ratio: 834/1076;
+    aspect-ratio: 7/9;
     margin: 4px 0 0 -16px;
     overflow-y: clip;
   }
-  h1, .services h2, .work h2, .case-study h3 {
+  h1, main h2, .case-study h3 {
     font-size: 28px;
     line-height: 1.44;
   }
@@ -599,6 +839,7 @@ h1 span, .services li span, .industries h2 span {
     top: -8%;
   }
   .consultation {
+    margin-top: -8px;
     padding: 32px;
   }
   .consultation h2 {
@@ -611,7 +852,7 @@ h1 span, .services li span, .industries h2 span {
   .services-grid, .case-study {
     grid-template-columns: 1fr;
   }
-  .services, .projects {
+  .services, .projects, .faq {
     scroll-margin-top: 110px;
   }
   .services {
@@ -626,7 +867,7 @@ h1 span, .services li span, .industries h2 span {
     padding-top: 0;
   }
   .services li {
-    font-size: 14px;
+    font-size: 20px;
   }
   .services li:nth-child(2) {
     font-weight: 600;
@@ -648,7 +889,6 @@ h1 span, .services li span, .industries h2 span {
     order: 1;
   }
   .work {
-    margin-bottom: 32px;
     padding-bottom: 72px;
   }
   .projects {
@@ -673,6 +913,36 @@ h1 span, .services li span, .industries h2 span {
     width: 258px;
     max-width: 100%;
     margin: 32px auto 0;
+  }
+  .contact-form .form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .contact-form button {
+    width: 100%;
+  }
+  .stage-card {
+    padding: 16px;
+  }
+  .stage-card h3 {
+    gap: 12px;
+  }
+  .team-stats {
+    justify-content: start;
+    gap: 12px 16px;
+  }
+  .team-stats dd {
+    font-size: 13px;
+  }
+  .book-grid {
+    grid-template-areas: "title" "picture" "form";
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .book-picture {
+    width: 70%;
+    justify-self: center;
+  }
+  .faq summary {
+    font-size: 17px;
   }
   .site-footer {
     margin-bottom: 0;

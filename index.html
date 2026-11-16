@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IT Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Website</title>
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body id="top">
@@ -14,6 +14,7 @@
                 <nav class="desktop-nav">
                     <a href="#services">Services</a>
                     <a href="#projects">Cases</a>
+                    <a href="#faq">FAQ</a>
                     <a href="#contacts">Contacts</a>
                 </nav>
                 <details class="mobile-menu">
@@ -21,14 +22,13 @@
                     <nav>
                         <a href="#services">Services</a>
                         <a href="#projects">Cases</a>
+                        <a href="#faq">FAQ</a>
                         <a href="#contacts">Contacts</a>
                     </nav>
                 </details>
-                <address class="tablet-hidden">
-                    <a href="tel:+71111111111">+7 (111) 111 11 11</a>
-                    <a href="tel:+71111111111">+7 (111) 111 11 11</a>
-                </address>
                 <address>
+                    <a class="header-phone" href="tel:+71111111111">+7 (111) 111 11 11</a>
+                    <a class="header-phone" href="tel:+71111111111">+7 (111) 111 11 11</a>
                     <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
                 </address>
             </div>
@@ -48,22 +48,22 @@
                 <div class="hero-text">
                     <h1>Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
                     <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices.</p>
-
-                    <form class="consultation">
-                        <h2>Leave your contacts and we will call you back<br>within 30 minutes</h2>
-                        <div class="form-row">
-                            <label>
-                                Phone number
-                                <input class="phone" type="tel" name="phone" placeholder="+7 (111) 111-11-11">
-                            </label>
-                            <label>
-                                Full name
-                                <input type="text" name="name" placeholder="Иван Иванов">
-                            </label>
-                            <button type="button">Get consultation</button>
-                        </div>
-                    </form>
                 </div>
+
+                <form class="consultation">
+                    <h2>Leave your contacts and we will call you back within 30 minutes</h2>
+                    <div class="form-row">
+                        <label>
+                            Phone number
+                            <input class="phone" type="tel" name="phone" placeholder="+7 (111) 111-11-11">
+                        </label>
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Иван Иванов">
+                        </label>
+                        <button type="button">Get consultation</button>
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -93,21 +93,21 @@
                 <section class="industries">
                     <h2>Developed more than <span>100</span><br>projects in <span>15</span> industries</h2>
                     <ul class="industry-list">
-                        <li><img src="./src/assets/img/industry-social.webp" alt="">Social media</li>
-                        <li><img src="./src/assets/img/industry-sport.webp" alt="">Fitness and sport</li>
-                        <li><img src="./src/assets/img/industry-bank.webp" alt="">Bank</li>
-                        <li><img src="./src/assets/img/industry-construction.webp" alt="">Construction</li>
-                        <li><img src="./src/assets/img/industry-games.webp" alt="">Game projects</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-education.webp" alt="">Education</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-transport.webp" alt="">Auto, transport</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-health.webp" alt="">Medicine, health</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-food.webp" alt="">Restaurants, food delivery</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-market.webp" alt="">Marketplaces</li>
-                        <li><img src="./src/assets/img/industry-ar.webp" alt="">AR technology</li>
-                        <li><img src="./src/assets/img/industry-tv.webp" alt="">TV series</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-startup.webp" alt="">Startups</li>
-                        <li class="industry-right"><img src="./src/assets/img/industry-religion.webp" alt="">Religion</li>
-                        <li><img src="./src/assets/img/industry-courses.webp" alt="">Online courses</li>
+                        <li><img src="src/assets/img/industry-social.webp" alt="">Social media</li>
+                        <li><img src="src/assets/img/industry-sport.webp" alt="">Fitness and sport</li>
+                        <li><img src="src/assets/img/industry-bank.webp" alt="">Bank</li>
+                        <li><img src="src/assets/img/industry-construction.webp" alt="">Construction</li>
+                        <li><img src="src/assets/img/industry-games.webp" alt="">Game projects</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-education.webp" alt="">Education</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-transport.webp" alt="">Auto, transport</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-health.webp" alt="">Medicine, health</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-food.webp" alt="">Restaurants, food delivery</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-market.webp" alt="">Marketplaces</li>
+                        <li><img src="src/assets/img/industry-ar.webp" alt="">AR technology</li>
+                        <li><img src="src/assets/img/industry-tv.webp" alt="">TV series</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-startup.webp" alt="">Startups</li>
+                        <li class="industry-right"><img src="src/assets/img/industry-religion.webp" alt="">Religion</li>
+                        <li><img src="src/assets/img/industry-courses.webp" alt="">Online courses</li>
                     </ul>
                 </section>
 
@@ -145,15 +145,140 @@
                             </dl>
 
                             <div class="store-badges">
-                                <img src="./src/assets/img/app-store.webp" width="148" height="40" alt="App Store">
-                                <img src="./src/assets/img/google-play.webp" width="136" height="40" alt="Google Play">
+                                <img src="src/assets/img/app-store.webp" width="148" height="40" alt="App Store">
+                                <img src="src/assets/img/google-play.webp" width="136" height="40" alt="Google Play">
                             </div>
                         </div>
-                        <img class="case-picture" src="./src/assets/img/project-phones.webp" alt="I-teka on two smartphones">
+                        <img class="case-picture" src="src/assets/img/project-phones.webp" alt="I-teka on two smartphones">
                     </article>
                 </section>
             </div>
         </div>
+
+        <section class="discussion blue-section">
+            <div class="container discussion-grid">
+                <div>
+                    <h2>Let's discuss<br>Your project</h2>
+                    <p>Let's figure out how to create an effective application, its cost and terms of its development.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label>
+                            Best phone number
+                            <input class="phone" type="tel" name="phone" placeholder="+7 (702) 517-11-98">
+                        </label>
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Иван Иванов">
+                        </label>
+                    </div>
+                    <button class="contact-button" type="button">Discuss the project</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="stages">
+            <div class="container">
+                <h2>Application Development Stages</h2>
+                <ol class="stages-grid">
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-analysis.webp" width="48" height="48" alt="">Analysis</h3>
+                        <p>We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</p>
+                    </li>
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-design.webp" width="48" height="48" alt="">Design</h3>
+                        <p>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</p>
+                    </li>
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-development.webp" width="48" height="48" alt="">Development</h3>
+                        <p>We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</p>
+                    </li>
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-testing.webp" width="48" height="48" alt="">Testing</h3>
+                        <p>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions.</p>
+                    </li>
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-launching.webp" width="48" height="48" alt="">Launching</h3>
+                        <p>We design the application page and publish it in the App Store and Google Play stores.</p>
+                    </li>
+                    <li class="stage-card">
+                        <h3><img src="src/assets/img/stage-support.webp" width="48" height="48" alt="">Support</h3>
+                        <p>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container team-grid">
+                <div class="team-intro">
+                    <h2>Our team</h2>
+                    <p>Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.</p>
+                </div>
+                <img class="team-picture" src="src/assets/img/team.webp" width="600" height="450" alt="Our team of designers and developers" loading="lazy">
+                <div class="team-info">
+                    <dl class="team-stats">
+                        <div><dt>28</dt><dd>team members</dd></div>
+                        <div><dt>+100</dt><dd>projects</dd></div>
+                        <div><dt>7 years</dt><dd>in IT sphere</dd></div>
+                    </dl>
+                    <p>All the necessary specialists, from a designer to a tester, are on our staff. We hire the best specialists in the market. It's expensive but worth it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-section blue-section">
+            <div class="container book-grid">
+                <h2>Get the book for free by leaving your contacts</h2>
+                <img class="book-picture" src="src/assets/img/book.png" width="600" height="588" alt="Top 10 mistakes in mobile application development" loading="lazy">
+                <form class="contact-form book-form">
+                    <div class="form-row">
+                        <label>
+                            Phone number
+                            <input class="phone" type="tel" name="phone" placeholder="+7 (111) 111-11-11">
+                        </label>
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Your full name">
+                        </label>
+                        <label class="email-field">
+                            Email
+                            <input type="email" name="email" placeholder="mail@mail.com">
+                        </label>
+                    </div>
+                    <button class="contact-button" type="button">Send me ebook to my mail</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="faq-grid">
+                    <div class="faq-first">
+                        <details open>
+                            <summary>How long will development take?</summary>
+                            <p>Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.</p>
+                            <p>Average development time from start to finished application:<br>Medium projects <strong>up to 3 months.</strong><br>Large projects <strong>about 4–6 months.</strong><br>To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.</p>
+                        </details>
+                        <details>
+                            <summary>I will not tell my idea, do you guarantee confidentiality?</summary>
+                            <p>We can agree on confidentiality before discussing the details of your idea.</p>
+                        </details>
+                    </div>
+                    <div class="faq-second">
+                        <details>
+                            <summary>What is the cost of a mobile application?</summary>
+                            <p>The cost depends on the features, design and platforms. Leave your contacts to discuss the project and get an estimate.</p>
+                        </details>
+                        <details>
+                            <summary>Do you provide a guarantee for the mobile application?</summary>
+                            <p>We test the application before launch and provide support. The scope and terms of the guarantee are agreed for each project.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" id="contacts">

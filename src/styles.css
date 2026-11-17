@@ -552,7 +552,6 @@ h1 span, .services li span, .industries h2 span {
   grid-area: second;
 }
 
-/* Автоматический верхний отступ прижимает подвал к низу даже без main. */
 .site-footer {
   margin: auto auto 48px;
   padding: 16px 24px 24px;
@@ -575,7 +574,6 @@ h1 span, .services li span, .industries h2 span {
   font-size: 14px;
 }
 
-/* Узкий десктоп и большие планшеты */
 @media (max-width: 1279px) {
   .header-row {
     padding: 0 16px;
@@ -614,7 +612,6 @@ h1 span, .services li span, .industries h2 span {
     padding: 56px 0;
   }
 }
-/* Планшет */
 @media (max-width: 769px) {
   .header-row {
     height: 72px;
@@ -781,7 +778,6 @@ h1 span, .services li span, .industries h2 span {
     font-size: 14px;
   }
 }
-/* Телефон */
 @media (max-width: 426px) {
   .container {
     width: calc(100% - 32px);
